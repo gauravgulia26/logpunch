@@ -1,12 +1,12 @@
-name: Release
+name: Publish to PyPI
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - main  # Trigger only on main branch
 
 jobs:
-  deploy-pypi:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,13 +16,14 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10
+        python-version: '3.10'
 
     - name: Install build tools
       run: |
-        python -m pip install --upgrade build twine
+        python -m pip install --upgrade pip
+        pip install build twine
 
-    - name: Build package
+    - name: Build the package
       run: python -m build
 
     - name: Publish to PyPI
