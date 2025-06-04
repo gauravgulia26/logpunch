@@ -1,7 +1,7 @@
 [project]
 name = "logpunch"
-version = "0.1.0"
-description = "Toolkit is a lightweight Python package providing a customizable colored logger and enhanced exception handling with detailed error tracking — designed to streamline logging and debugging in data science and machine learning projects."
+version = "0.1.2"
+description = "Logpunch is a lightweight Python package providing a customizable colored logger and enhanced exception handling with detailed error tracking — designed to streamline logging and debugging in data science and machine learning projects."
 readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "MIT"}
