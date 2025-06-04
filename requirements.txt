@@ -1,3 +1,4 @@
 pydantic
 colorama
 -e .
+pre-commit
