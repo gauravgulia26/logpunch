@@ -106,7 +106,7 @@ ERROR: Division by zero is not allowed. (File: example.py, Function: divide, Lin
 
 We welcome contributions! To get started:
 
-1. Fork the repository on [GitHub](https://github.com/your-repo/logpunch).
+1. Fork the repository on [GitHub](https://github.com/gauravgulia26/logpunch).
 2. Clone your fork and create a new branch: `git checkout -b feature-name`.
 3. Make your changes and commit them: `git commit -m "Add feature-name"`.
 4. Push to your fork: `git push origin feature-name`.
