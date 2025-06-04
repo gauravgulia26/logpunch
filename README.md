@@ -1,19 +1,19 @@
-# Toolkit
+# Logpunch
 
 A lightweight Python package for **Data Science** and **Machine Learning** projects, offering a customizable colored logger and an advanced exception tracking system.
 
-[![PyPI version](https://img.shields.io/pypi/v/toolkit.svg)](https://pypi.org/project/toolkit/)
+[![PyPI version](https://img.shields.io/pypi/v/logpunch.svg)](https://pypi.org/project/logpunch/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
 
 ## Overview
 
-**Toolkit** is designed to streamline debugging and logging in data science and machine learning workflows. It provides:
+**logpunch** is designed to streamline debugging and logging in data science and machine learning workflows. It provides:
 
 - A **customizable logger** with colored terminal output and file-based logging, configurable for different log levels (DEBUG, INFO, WARNING, ERROR, CRITICAL).
 - A **tracked exception** class that automatically captures the file name, function name, and line number of errors, simplifying debugging.
 
-Whether you're building ML pipelines or analyzing data, Toolkit enhances traceability and monitoring with minimal setup.
+Whether you're building ML pipelines or analyzing data, logpunch enhances traceability and monitoring with minimal setup.
 
 ## Features
 
@@ -30,10 +30,10 @@ Whether you're building ML pipelines or analyzing data, Toolkit enhances traceab
 
 ## Installation
 
-Install Toolkit via PyPI:
+Install logpunch via PyPI:
 
 ```bash
-pip install toolkit
+pip install logpunch
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ pip install toolkit
 Configure and initialize the logger with a few lines of code:
 
 ```python
-from toolkit.customlogger import CustomLogger, LoggerConfig
+from logpunch.customlogger import CustomLogger, LoggerConfig
 
 # Define logger configuration
 config = LoggerConfig(
@@ -69,8 +69,8 @@ Log files are saved in the specified `log_dir` (e.g., `logs/`) with timestamps f
 The `TrackedException` class enhances error handling by automatically capturing the context of where the error occurred:
 
 ```python
-from toolkit.customlogger import CustomLogger, LoggerConfig
-from toolkit.customexception import TrackedException
+from logpunch.customlogger import CustomLogger, LoggerConfig
+from logpunch.customexception import TrackedException
 
 # Logger setup
 config = LoggerConfig(log_dir="logs", log_level="ERROR")
@@ -95,7 +95,7 @@ The logged error will include details like the file name, function name, and lin
 ERROR: Division by zero is not allowed. (File: example.py, Function: divide, Line: 10)
 ```
 
-## Why Use Toolkit?
+## Why Use logpunch?
 
 - **Enhanced Debugging**: Pinpoint errors quickly with detailed exception context.
 - **Clear Logging**: Colored logs improve readability during development and debugging.
@@ -106,7 +106,7 @@ ERROR: Division by zero is not allowed. (File: example.py, Function: divide, Lin
 
 We welcome contributions! To get started:
 
-1. Fork the repository on [GitHub](https://github.com/your-repo/toolkit).
+1. Fork the repository on [GitHub](https://github.com/your-repo/logpunch).
 2. Clone your fork and create a new branch: `git checkout -b feature-name`.
 3. Make your changes and commit them: `git commit -m "Add feature-name"`.
 4. Push to your fork: `git push origin feature-name`.
@@ -116,8 +116,8 @@ Please ensure your code follows PEP 8 guidelines and includes tests where applic
 
 ## License
 
-Toolkit is licensed under the [MIT License](LICENSE).
+logpunch is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For questions or support, open an issue on [GitHub](https://github.com/your-repo/toolkit) or contact the maintainers at [grvgulia007@gmail.com](mailto:grvgulia007@gmail.com).
+For questions or support, open an issue on [GitHub](https://github.com/your-repo/logpunch) or contact the maintainers at [grvgulia007@gmail.com](mailto:grvgulia007@gmail.com).
